@@ -1,0 +1,154 @@
+<!--327809190 עותמאן אגבאריה
+  214626913 אחמד חבשי-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Component By Function</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #7fa6c6;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      }
+      .wrapper {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        width: 360px;
+        background-color: #eaf0f7;
+        text-align: center;
+        padding: 40px 25px 35px;
+        box-sizing: border-box;
+      }
+      h1 {
+        margin: 0 0 30px;
+        font-size: 26px;
+        font-weight: 700;
+        color: #173b63;
+      }
+      .book-cover {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        background-color: #ffffff;
+        width: 200px;
+        height: 320px;
+        margin: 0 auto 25px;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+      }
+      .book-top-strip {
+        background-color: #f2f2f2;
+        padding: 6px 10px;
+        font-size: 10px;
+        font-weight: 700;
+        text-align: left;
+        letter-spacing: 0.5px;
+      }
+      .book-top-pattern {
+        height: 40px;
+        background-image: repeating-linear-gradient(
+          -45deg,
+          #f5f5f5,
+          #f5f5f5 2px,
+          #eaeaea 2px,
+          #eaeaea 4px
+        );
+      }
+      .book-author-main {
+        padding-top: 10px;
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+      .book-title-main {
+        padding: 8px 10px 16px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1.1;
+      }
+      .book-title-main div {
+        margin: 2px 0;
+      }
+      .book-bottom-yellow {
+        flex: 1;
+        background-color: #ffd54f;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+      .js-bar {
+        position: absolute;
+        left: 20px;
+        top: 18px;
+        bottom: 18px;
+        width: 50px;
+        background-color: #232323;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .js-bar-text {
+        color: #ffd54f;
+        font-size: 10px;
+        letter-spacing: 1px;
+        transform: rotate(90deg);
+      }
+      .js-big {
+        margin-left: 85px;
+        font-size: 56px;
+        font-weight: 700;
+        color: #232323;
+        line-height: 0.8;
+      }
+      .author {
+        color: #173b63;
+        font-weight: 700;
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      .description {
+        font-size: 13px;
+        color: #444;
+        margin: 0 10px 35px;
+        line-height: 1.4;
+      }
+      .footer {
+        font-size: 12px;
+        color: #173b63;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="card">
+        <h1>Book Component By Function</h1>
+        <div class="book-cover">
+          <div class="book-top-strip">O'Reilly</div>
+          <div class="book-top-pattern"></div>
+          <div class="book-author-main">KYLE SIMPSON</div>
+          <div class="book-title-main">
+            <div>SCOPE &amp;</div>
+            <div>CLOSURES</div>
+          </div>
+          <div class="book-bottom-yellow">
+            <div class="js-bar">
+              <div class="js-bar-text">YOU DON'T KNOW</div>
+            </div>
+            <div class="js-big">JS</div>
+          </div>
+        </div>
+        <div class="author">By Kyle Simpson</div>
+        <p class="description">
+          Parts of the language that many JavaScript programmers simply avoid.
+        </p>
+        <div class="footer">&copy; 2021 Noor & Besan</div>
+      </div>
+    </div>
+  </body>
+</html>
